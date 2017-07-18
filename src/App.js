@@ -14,7 +14,7 @@ class App extends Component {
         "id": "michael",
         "name": "Michael Jackson",
         "email": "michael@reacttraining.com",
-        "{}": "http://localhost:5001/michael.jpg"
+        "avatarURL": "http://localhost:5001/michael.jpg"
       },
       {
         "id": "tyler",
@@ -34,7 +34,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ListContacts onDeleteContact={this.removeContact} contacts={this.state.contacts} />
+        <ListContacts
+          onDeleteContact={this.removeContact}
+          contacts={this.state.contacts} />
       </div>
     )
   }
